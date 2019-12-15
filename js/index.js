@@ -38,3 +38,10 @@ window.addEventListener("scroll", (e) => {
     introEffect.style.transform = "scale(0.7)";
     introEffect.style.transition = "all 3s";
 });
+
+const imgResize = document.querySelectorAll(".img-content img");
+
+window.addEventListener("resize", (e) => {
+    imgResize[0].setAttribute("style", "border: 2px solid gold")
+    imgResize[1].setAttribute("style", "border: 2px solid gold")
+});
