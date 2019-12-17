@@ -48,8 +48,6 @@ window.addEventListener("resize", (e) => {
 
 const images = document.querySelector(".intro img");
 
-console.log(images)
-
 images.addEventListener("mouseenter", () => {
     images.style.transform = "scale(0.75)";
     images.style.transition = "transform 0.3s"
@@ -57,3 +55,17 @@ images.addEventListener("mouseenter", () => {
 images.addEventListener("mouseleave", () => {
     images.style.transform = "scale(1)"
 });
+
+const copy = document.querySelector(".footer p");
+
+copy.addEventListener("dblclick", () => {
+    copy.style.transform = "scale(2)";
+});
+
+const screenError = document.querySelector(".content-destination");
+
+document.addEventListener("fullscreenerror", (e) => {
+    console.error("an error occured changing into fullscreen");
+    console.log(event);
+});
+
