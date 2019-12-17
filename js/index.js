@@ -45,3 +45,12 @@ window.addEventListener("resize", (e) => {
     imgResize[0].setAttribute("style", "border: 2px solid gold")
     imgResize[1].setAttribute("style", "border: 2px solid gold")
 });
+
+const images = document.querySelector(".intro img");
+
+console.log(images)
+
+images.addEventListener("mouseenter", () => {
+    images.style.transform = "scale(0.75)";
+    images.style.transition = "transform 0.3s"
+});
