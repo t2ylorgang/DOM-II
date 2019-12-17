@@ -54,3 +54,6 @@ images.addEventListener("mouseenter", () => {
     images.style.transform = "scale(0.75)";
     images.style.transition = "transform 0.3s"
 });
+images.addEventListener("mouseleave", () => {
+    images.style.transform = "scale(1)"
+});
