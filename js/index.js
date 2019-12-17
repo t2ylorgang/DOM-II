@@ -68,4 +68,3 @@ document.addEventListener("fullscreenerror", (e) => {
     console.error("an error occured changing into fullscreen");
     console.log(event);
 });
-
