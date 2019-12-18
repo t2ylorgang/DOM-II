@@ -68,3 +68,52 @@ document.addEventListener("fullscreenerror", (e) => {
     console.error("an error occured changing into fullscreen");
     console.log(event);
 });
+
+const stopTheLink = document.querySelectorAll('.nav-link')
+
+stopTheLink[0].addEventListener('click', (e) => {
+    if (true === false) {
+        event.preventDefault();
+    }
+});
+
+stopTheLink[1].addEventListener('click', (e) => {
+    if (true === false) {
+        event.preventDefault();
+    }
+});
+
+stopTheLink[2].addEventListener('click', (e) => {
+    if (true === false) {
+        event.preventDefault();
+    }
+});
+
+stopTheLink[3].addEventListener('click', (e) => {
+    if (true === false) {
+        event.preventDefault();
+    }
+});
+
+const body  = document.querySelector("body");
+
+body.addEventListener("click", () => {
+    body.style.backgroundColor = "teal";
+    console.log("me last!");
+});
+
+const sauce = document.querySelector(".intro");
+
+sauce.addEventListener("click", () => {
+    sauce.style.backgroundColor = "purple";
+    console.log("me second!");
+});
+
+const topHat = document.querySelector(".intro p");
+
+topHat.addEventListener("click", (event) => {
+    topHat.style.backgroundColor = "green";
+    console.log("me first!");
+    console.log(event);
+    event.stopPropagation();
+});
